@@ -2,6 +2,7 @@ import React, { useCallback, useContext } from "react";
 import { withRouter, Redirect } from "react-router";
 import fire from "../../config/fbConfig";
 import { AuthContext } from "../../components/Auth";
+import{NavLink} from 'react-router-dom';
 import firebase from 'firebase/app';
 
 const SignIn = ({ history }) => {
@@ -27,7 +28,7 @@ const HandleGoogle = useCallback(
     try{
       await fire
       .auth().signInWithPopup(provider).then(function(result){
-        history.push("/profile");
+        history.push("/");
         console.log("Success")
       })
     }catch(error){
@@ -63,7 +64,10 @@ const HandleGoogle = useCallback(
                              <div className="input-field">
                              <button className="btn pink lighten-1 z-depth-0" onClick={HandleGoogle}>Sign In With Google</button> 
                            </div>
-
+                           
+                           <div className="input-field">
+                            <p>Don't have an account? Sign Up <NavLink to='/sign'> here</NavLink></p>  
+                           </div>
 
                        </form>
             </div>

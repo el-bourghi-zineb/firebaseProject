@@ -38,7 +38,7 @@ const SignUp = ({ history }) => {
                              <button className="btn pink lighten-1 z-depth-0">Sign Up</button> 
                            </div>
                            <div className="input-field">
-                            <p>Already have an account? <NavLink to='/redirect'>Sign In here</NavLink></p>  
+                            <p>Already have an account? Sign In <NavLink to='/redirect'> here</NavLink></p>  
                            </div>
                        </form>
             </div>

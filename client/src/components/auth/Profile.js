@@ -20,7 +20,7 @@ const Profile=()=> {
             <div className="input-field">
              <NavLink to='/change'>Update Password</NavLink>
             </div>
-     <NavLink to='/'>Back</NavLink>
+            <NavLink to='/'>Back</NavLink>
        </div>
     );
   }

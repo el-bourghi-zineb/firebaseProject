@@ -31,6 +31,7 @@ function App() {
        <Route exact path='/change' component={Update}/>
        <Route exact path='/profile' component={Profile}/>
        <Route exact path='/redirect' component={SignIn}/>
+       <Route exact path='/sign' component={SignUp}/>
        <Route exact path='/back' component={Profile}/>
 
         </div>
